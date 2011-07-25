@@ -23,13 +23,17 @@ class SessionStorage implements Storage
     protected $_member;
     
     /**
-     * Provide either a Zend_Session_Namespace or a string
+     * Provide either a Zend_Session_Namespace or a string along with a property
+     * name under which to store contents.
      * 
      * @param Zend_Session_Namespace|string $namespace
      * @param string $member
      */
     public function __construct($namespace, $member)
     {
+        if (null === $member || !is_scalar($member) || (0 === strlen($member))) {
+            throw NamespaceException::invalidPropertyName($member);
+        }
         if (!$namespace instanceof \Zend_Session_Namespace) {
             $namespace = new \Zend_Session_Namespace($namespace);
         }
