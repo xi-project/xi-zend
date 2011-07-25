@@ -1,5 +1,6 @@
 <?php
-namespace Xi\Storage;
+namespace Xi\Storage\Zend;
+use Xi\Storage\Storage;
 
 /**
  * Stores data into a Zend_Session_Namespace instance
