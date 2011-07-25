@@ -1,5 +1,7 @@
 <?php
 namespace Xi\Storage;
+use \SplFileInfo;
+
 /**
  * @category    Xi
  * @package     Xi_Storage
