@@ -61,7 +61,7 @@ class FileStorage implements Storage
         if (!$file->isReadable()) {
             throw FileException::shouldBeReadable((string) $file);
         }
-        return unserialize(file_get_contents((string) $file));
+        return file_get_contents((string) $file);
     }
     
     /**
@@ -76,7 +76,7 @@ class FileStorage implements Storage
         if ($file->isFile() && !$file->isWritable()) {
             throw FileException::shouldBeWriteable((string) $file);
         }
-        file_put_contents((string) $file, serialize($contents));
+        file_put_contents((string) $file, $contents);
     }
     
     /**
