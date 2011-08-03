@@ -3,8 +3,11 @@
 General component outline
 -------------------------
 
-Xi\Storage: Simple read / write storage capabilities with Zend_Auth_Storage_Interface compatibility.
-Xi\Zend\Auth: Authentication adapters for Zend Framework. Contains only Doctrine 2+ ORM authentication adapter for now.
+Xi\Storage
+:   Simple read / write storage capabilities with Zend_Auth_Storage_Interface compatibility.
+
+Xi\Zend\Auth
+:   Authentication adapters for Zend Framework. Contains only Doctrine 2+ ORM authentication adapter for now.
 
 ### Xi\Zend\Auth
 
