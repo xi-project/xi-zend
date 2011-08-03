@@ -31,7 +31,7 @@ abstract class AbstractAdapter
      * Create a Zend_Auth_Result for an authentication request.
      *
      * @param  integer          $code
-     * @param  mixed            $result
+     * @param  string           $result
      * @param  array            $messages
      * @return Zend_Auth_Result
      */

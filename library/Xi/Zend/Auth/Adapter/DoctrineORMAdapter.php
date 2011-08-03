@@ -46,13 +46,16 @@ class DoctrineORMAdapter extends AbstractAdapter implements AuthAdapter
     private $entityClass;
 
     /**
-     * Entity alias to be used in DQL
+     * Entity class alias to be used in DQL
      *
      * @var string
      */
     private $entityAlias;
 
     /**
+     * This columns value will be used as the identity when creating an
+     * Zend_Auth_Result
+     *
      * @var string
      */
     private $identityColumn;
@@ -76,6 +79,7 @@ class DoctrineORMAdapter extends AbstractAdapter implements AuthAdapter
      * @param  EntityManager   $em
      * @param  string          $entityClass
      * @param  string          $entityAlias
+     * @param  string          $identityColumn
      * @param  array           $conditions
      * @return DoctrineAdapter
      */
