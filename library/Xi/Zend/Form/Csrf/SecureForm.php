@@ -149,7 +149,7 @@ class SecureForm extends AbstractForm
     protected function _getViewScriptDecorator($script)
     {
         return new Zend_Form_Decorator_ViewScript(array(
-            'viewScript' => "forms/{$script}"
+            'viewScript' => $script
         ));
     }
 
