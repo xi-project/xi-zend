@@ -256,6 +256,7 @@ class SecureForm extends AbstractForm
      * Get the security configuration
      * 
      * @return ArrayObject
+     * @throws ConfigurationNotFoundException
      */
     protected function _getSecurityConfig()
     {
