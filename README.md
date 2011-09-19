@@ -1,3 +1,9 @@
+# DEPRECATED
+
+This component is too generic and would soon become a write-only code 
+dump. Individual components will be moved to their own respective 
+repositories and this repository deleted as soon as possible.
+
 # Xi Zend
 
 General component outline
