@@ -151,6 +151,14 @@ class DoctrineORMAdapter extends AbstractAdapter implements AuthAdapter
     }
 
     /**
+     * @return EntityManager
+     */
+    protected function getEntityManager()
+    {
+        return $this->em;
+    }
+
+    /**
      * @return string
      */
     public function getEntityClass()
